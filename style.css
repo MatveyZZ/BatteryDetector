@@ -1,152 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); /* Импорт шрифта Ubuntu из Google Fonts с различными весами */
 
-* {
-    font-family: 'Ubuntu';
-    margin: 0;
-    padding: 0;
+* { /* Селектор для всех элементов на странице */
+    font-family: 'Ubuntu'; /* Установка шрифта 'Ubuntu' для всех элементов */
+    margin: 0; /* Установка отступа (margin) равным 0 для всех элементов */
+    padding: 0; /* Установка внутреннего отступа (padding) равным 0 для всех элементов */
 }
 
-:root {
-    --gradient-color-red: linear-gradient(90deg, hsl(7, 89%, 46%) 15%, hsl(11, 93%, 68%) 100%);
-    --gradient-color-orange: linear-gradient(90deg, hsl(22, 89%, 46%) 15%, hsl(54, 93%, 68%) 100%);
-    --gradient-color-yellow: linear-gradient(90deg, hsl(54, 89%, 46%) 15%, hsl(92, 93%, 68%) 100%);
-    --gradient-color-green: linear-gradient(90deg, hsl(92, 89%, 46%) 15%, hsl(92, 93%, 68%) 100%);
+:root { /* Определение корневых переменных CSS */
+    --gradient-color-red: linear-gradient(90deg, hsl(7, 89%, 46%) 15%, hsl(11, 93%, 68%) 100%); /* Определение градиента для красного цвета */
+    --gradient-color-orange: linear-gradient(90deg, hsl(22, 89%, 46%) 15%, hsl(54, 93%, 68%) 100%); /* Определение градиента для оранжевого цвета */
+    --gradient-color-yellow: linear-gradient(90deg, hsl(54, 89%, 46%) 15%, hsl(92, 93%, 68%) 100%); /* Определение градиента для желтого цвета */
+    --gradient-color-green: linear-gradient(90deg, hsl(92, 89%, 46%) 15%, hsl(92, 93%, 68%) 100%); /* Определение градиента для зеленого цвета */
 }
 
-body {
-    background: #070707;
-    color: #fff;
+body { /* Селектор для элемента body */
+    background: #070707; /* Установка фона страницы на темный цвет */
+    color: #fff; /* Установка цвета текста на белый */
 }
 
-.battery {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    margin: 0 1.5rem;
+.battery { /* Селектор для элемента с классом "battery" */
+    height: 100vh; /* Установка высоты элемента на 100% высоты видимой области (viewport) */
+    display: grid; /* Использование CSS Grid для размещения элементов внутри контейнера */
+    place-items: center; /* Центрирование содержимого по вертикали и горизонтали */
+    margin: 0 1.5rem; /* Установка горизонтальных отступов (margin) по 1.5rem с обеих сторон */
 }
 
-.Bcard {
-    position: relative;
-    width: 270px;
-    height: 240px;
-    background: #222;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+.Bcard { /* Селектор для элемента с классом "Bcard" */
+    position: relative; /* Установка относительного позиционирования для элемента */
+    width: 270px; /* Установка ширины элемента на 270 пикселей */
+    height: 240px; /* Установка высоты элемента на 240 пикселей */
+    background: #222; /* Установка фона элемента на темный цвет (#222) */
+    padding: 0.5rem 1.5rem; /* Установка внутреннего отступа (padding) сверху и снизу 0.5rem, слева и справа 1.5rem */
+    border-radius: 1.5rem; /* Установка радиуса скругления углов элемента на 1.5rem */
+    display: grid; /* Использование CSS Grid для размещения дочерних элементов */
+    grid-template-columns: repeat(2, 1fr); /* Определение двух колонок одинаковой ширины (1fr) */
+    align-items: center; /* Центрирование дочерних элементов по вертикали */
 }
 
-Btext {
-    margin-bottom: 0.5rem;
+Btext { /* Селектор для элемента с классом "Btext" (обратите внимание, что здесь отсутствует точка перед классом) */
+    margin-bottom: 0.5rem; /* Установка нижнего отступа (margin) на 0.5rem */
 }
 
-.Bpercentage {
-    font-size: 2.5rem;
+.Bpercentage { /* Селектор для элемента с классом "Bpercentage" */
+    font-size: 2.5rem; /* Установка размера шрифта на 2.5rem */
 }
 
-.Bstatus {
-    position: absolute;
-    bottom: 3.5rem;
-    display: flex;
-    align-items: center;
-    column-gap: 0.3rem;
-    font-size: 0.8rem;
+.Bstatus { /* Селектор для элемента с классом "Bstatus" */
+    position: absolute; /* Установка абсолютного позиционирования для элемента */
+    bottom: 3.5rem; /* Установка расстояния от нижней грани родительского элемента на 3.5rem */
+    display: flex; /* Использование Flexbox для размещения дочерних элементов */
+    align-items: center; /* Центрирование дочерних элементов по вертикали */
+    column-gap: 0.3rem; /* Установка расстояния между колонками на 0.3rem */
+    font-size: 0.8rem; /* Установка размера шрифта на 0.8rem */
 }
 
-.Bstatus i {
-    font-size: 1.25rem;
+.Bstatus i { /* Селектор для иконок внутри элемента с классом "Bstatus" */
+    font-size: 1.25rem; /* Установка размера шрифта (или размера иконки) на 1.25rem */
 }
 
-.Bpill {
-    position: relative;
-    width: 75px;
-    height: 180px;
-    background-color: #222;
-    box-shadow: inset 20px 0 48px hsl(0, 0%, 16%), inset -4px 12px 48px hsl(0, 0%, 56%);
-    border-radius: 3rem;
-    justify-self: flex-start;
+.Bpill { /* Селектор для элемента с классом "Bpill" */
+    position: relative; /* Установка относительного позиционирования для элемента */
+    width: 75px; /* Установка ширины элемента на 75 пикселей */
+    height: 180px; /* Установка высоты элемента на 180 пикселей */
+    background-color: #222; /* Установка фона элемента на темный цвет (#222) */
+    box-shadow: inset 20px 0 48px hsl(0, 0%, 16%), inset -4px 12px 48px hsl(0, 0%, 56%); /* Добавление внутренних теней для создания эффекта глубины */
+    border-radius: 3rem; /* Установка радиуса скругления углов элемента на 3rem */
+    justify-self: flex-start; /* Выравнивание элемента по началу (влево) в сетке */
 }
 
-.Blevel {
-    position: absolute;
-    inset: 2px;
-    border-radius: 3rem;
-    overflow: hidden;
+.Blevel { /* Селектор для элемента с классом "Blevel" */
+    position: absolute; /* Установка абсолютного позиционирования для элемента */
+    inset: 2px; /* Установка отступов со всех сторон на 2 пикселя (верх, право, низ, лево) */
+    border-radius: 3rem; /* Установка радиуса скругления углов элемента на 3rem */
+    overflow: hidden; /* Скрытие содержимого, выходящего за пределы элемента */
 }
 
-.Bliquid {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 36px;
-    background: var(--gradient-color-red);
-    box-shadow: inset -10px 0 12px hsla(0, 0%, 0%, 0.1), inset 12px 0 12px hsla(0, 0%, 0%, 0.15);
-    transition: 0.3s;
+.Bliquid { /* Селектор для элемента с классом "Bliquid" */
+    position: absolute; /* Установка абсолютного позиционирования для элемента */
+    bottom: 0; /* Установка элемента в нижней части родительского контейнера */
+    left: 0; /* Установка элемента к левому краю родительского контейнера */
+    right: 0; /* Установка элемента к правому краю родительского контейнера */
+    height: 36px; /* Установка высоты элемента на 36 пикселей */
+    background: var(--gradient-color-red); /* Установка фона элемента с использованием градиента, определенного в переменной CSS */
+    box-shadow: inset -10px 0 12px hsla(0, 0%, 0%, 0.1), inset 12px 0 12px hsla(0, 0%, 0%, 0.15); /* Добавление внутренних теней для создания эффекта глубины */
+    transition: 0.3s; /* Установка времени перехода для анимации изменений стилей на 0.3 секунды */
 }
 
-.Bliquid::after {
-    content: "";
-    position: absolute;
-    height: 8px;
-    box-shadow: inset 0 -3px 6px hsla(0, 0%, 0%, 0.2);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: -4px;
-    border-radius: 50%;
+.Bliquid::after { /* Псевдоэлемент ::after для элемента с классом "Bliquid" */
+    content: ""; /* Установка пустого содержимого для псевдоэлемента */
+    position: absolute; /* Установка абсолютного позиционирования для псевдоэлемента */
+    height: 8px; /* Установка высоты псевдоэлемента на 8 пикселей */
+    box-shadow: inset 0 -3px 6px hsla(0, 0%, 0%, 0.2); /* Добавление внутренней тени для создания эффекта глубины */
+    left: 0; /* Установка псевдоэлемента к левому краю родительского контейнера */
+    right: 0; /* Установка псевдоэлемента к правому краю родительского контейнера */
+    margin: 0 auto; /* Центрирование псевдоэлемента по горизонтали */
+    top: -4px; /* Установка расстояния от верхней грани родительского контейнера на -4 пикселя (поднимает элемент вверх) */
+    border-radius: 50%; /* Установка радиуса скругления углов на 50% для создания круглой формы */
 }
 
-.green-color {
-    background: var(--gradient-color-green);
+.green-color { /* Селектор для класса "green-color" */
+    background: var(--gradient-color-green); /* Установка фона элемента с использованием градиента, определенного в переменной CSS */
 }
 
-.animated-green {
-    background: var(--gradient-color-green);
-    animation: animated-charging 1.2s infinite alternate;
+.animated-green { /* Селектор для класса "animated-green" */
+    background: var(--gradient-color-green); /* Установка фона элемента с использованием градиента зеленого цвета */
+    animation: animated-charging 1.2s infinite alternate; /* Применение анимации "animated-charging" с длительностью 1.2 секунды, бесконечным повторением и чередованием направления */
 }
 
-.animated-red {
-    background: var(--gradient-color-red);
-    animation: animated-low 1.2s infinite alternate;
+.animated-red { /* Селектор для класса "animated-red" */
+    background: var(--gradient-color-red); /* Установка фона элемента с использованием градиента красного цвета */
+    animation: animated-low 1.2s infinite alternate; /* Применение анимации "animated-low" с длительностью 1.2 секунды, бесконечным повторением и чередованием направления */
 }
 
-.animated-green, .animated-red, .green-color {
-    -webkit-background-clip: text;
-    color: transparent;
+.animated-green, .animated-red, .green-color { /* Селектор для классов "animated-green", "animated-red" и "green-color" */
+    -webkit-background-clip: text; /* Применение обрезки фона по тексту для браузеров на основе WebKit */
+    color: transparent; /* Установка цвета текста на прозрачный, чтобы показать фон через текст */
 }
 
-@keyframes animated-charging {
-    0% {
-        text-shadow: none;
+@keyframes animated-charging { /* Определение анимации с именем "animated-charging" */
+    0% { /* Начальное состояние анимации */
+        text-shadow: none; /* Установка тени текста на "нет" */
     }
-    100% {
-        text-shadow: 0 0 6px hsl(92, 90%, 68%);
-    }
-}
-
-@keyframes animated-low {
-    0% {
-        text-shadow: none;
-    }
-    100% {
-        text-shadow: 0 0 8px hsl(7, 89%, 46%);
+    100% { /* Конечное состояние анимации */
+        text-shadow: 0 0 6px hsl(92, 90%, 68%); /* Установка тени текста с размерами и цветом */
     }
 }
 
-.gradient-color-red, .green-color-red::after {
-    background: var(--gradient-color-red);
+@keyframes animated-low { /* Определение анимации с именем "animated-low" */
+    0% { /* Начальное состояние анимации */
+        text-shadow: none; /* Установка тени текста на "нет" */
+    }
+    100% { /* Конечное состояние анимации */
+        text-shadow: 0 0 8px hsl(7, 89%, 46%); /* Установка тени текста с размерами и цветом */
+    }
 }
 
-.gradient-color-green, .green-color-green::after {
-    background: var(--gradient-color-green);
+.gradient-color-red, .green-color-red::after { /* Селектор для классов "gradient-color-red" и псевдоэлемента ::after с классом "green-color-red" */
+    background: var(--gradient-color-red); /* Установка фона элемента с использованием градиента, определенного в переменной CSS для красного цвета */
 }
 
-.gradient-color-orange, .green-color-orange::after {
-    background: var(--gradient-color-orange);
+.gradient-color-green, .green-color-green::after { /* Селектор для классов "gradient-color-green" и псевдоэлемента ::after с классом "green-color-green" */
+    background: var(--gradient-color-green); /* Установка фона элемента с использованием градиента, определенного в переменной CSS для зеленого цвета */
 }
 
-.gradient-color-yellow, .green-color-yellow::after {
-    background: var(--gradient-color-yellow);
+.gradient-color-orange, .green-color-orange::after { /* Селектор для классов "gradient-color-orange" и псевдоэлемента ::after с классом "green-color-orange" */
+    background: var(--gradient-color-orange); /* Установка фона элемента с использованием градиента, определенного в переменной CSS для оранжевого цвета */
+}
+
+.gradient-color-yellow, .green-color-yellow::after { /* Селектор для классов "gradient-color-yellow" и псевдоэлемента ::after с классом "green-color-yellow" */
+    background: var(--gradient-color-yellow); /* Установка фона элемента с использованием градиента, определенного в переменной CSS для желтого цвета */
 }
